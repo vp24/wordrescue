@@ -41,7 +41,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Word Rescue</h1>
+      <h1>Guess the Animal</h1>
       <WordDisplay word={word} guessedLetters={guessedLetters} />
 
       {!isGameOver && !isWordGuessed ? (
@@ -107,7 +107,7 @@ function GuessInput({ onGuess }) {
 
 function WrongGuesses({ word, guessedLetters }) {
   const wrongGuesses = guessedLetters.filter(letter => !word.includes(letter));
-  return <div>Strikes: {wrongGuesses.join(', ')}</div>;
+  return <div>Wrong Letters: {wrongGuesses.join(', ')}</div>;
 }
 
 export default App;
