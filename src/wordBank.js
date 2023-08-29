@@ -1,0 +1,56 @@
+// wordBank.js
+
+const words = [
+    "ELEPHANT",
+    "KANGAROO",
+    "PLATYPUS",
+    "LEOPARD",
+    "ALBATROSS",
+    "MEERKAT",
+    "HEDGEHOG",
+    "CHIMPANZEE",
+    "TARANTULA",
+    "BARRACUDA",
+    "FLAMINGO",
+    "DINGO",
+    "STINGRAY",
+    "LEMUR",
+    "SLOTH",
+    "TAPIR",
+    "OCTOPUS",
+    "WARTHOG",
+    "HUMMINGBIRD",
+    "AARDVARK",
+    "KIWI",
+    "FERRET",
+    "LYNX",
+    "AXOLOTL",
+    "SEAHORSE",
+    "CHEETAH",
+    "BISON",
+    "RACCOON",
+    "CLOWNFISH",
+    "JELLYFISH",
+    "FALCON",
+    "WOMBAT",
+    "BABOON",
+    "COBRA",
+    "GAZELLE",
+    "PEACOCK",
+    "NARWHAL",
+    "BEAVER",
+    "OCELOT",
+    "GECKO",
+    "WALRUS",
+    "TOUCAN",
+    "OTTER",
+    "PUFFERFISH",
+    "TAMARIN",
+    "ANTEATER",
+];
+
+
+export function getRandomWord() {
+    const randomIndex = Math.floor(Math.random() * words.length);
+    return words[randomIndex];
+}
